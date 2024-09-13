@@ -19,6 +19,14 @@ class MainApplication : Application(), ReactApplication {
             PackageList(this).packages.apply {
               // Packages that cannot be autolinked yet can be added manually here, for example:
               // add(MyReactNativePackage())
+                add(CustomReactPackage())
+//                @Override
+//                protected List<ReactPackage> getPackages() {
+//                    return Arrays.<ReactPackage>asList(
+//                            new MainReactPackage(),
+//                    new CustomReactPackage() // Register your custom module
+//                    );
+//                }
             }
 
         override fun getJSMainModuleName(): String = "index"
